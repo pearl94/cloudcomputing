@@ -7,5 +7,5 @@ setup(name='YourAppName',
       author_email='example@example.com',
       url='https://www.python.org/community/sigs/current/distutils-sig',
       install_requires=[’Flask’,’flask-wtf’,’flask-babel’,
-’markdown’,’flup’, ’app’,’forms’],
+’markdown’,’flup’, ’app’,’forms’, ’bokeh.embed’, ’bokeh.plotting’, ’bokeh.resources’, ’bokeh.util.string’],
       )
