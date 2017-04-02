@@ -1,0 +1,37 @@
+  <!-- Code found online, usedf in creating database-->
+{% extends "base.html" %}
+{% block title %}Database reader
+{% endblock %}
+{% block content %}
+<p><b>The following page provides to get first 50 visitors from London_Visitors table.</b></p>
+<table>
+  <tr>
+    <th style="background-color: #dedcdc;">area</th>
+    <th style="background-color: #dedcdc;">dur_stay</th>
+    <th style="background-color: #dedcdc;">market</th>
+    <th style="background-color: #dedcdc;">nights</th>
+    <th style="background-color: #dedcdc;">mode</th>
+    <th style="background-color: #dedcdc;">purpose</th>
+    <th style="background-color: #dedcdc;">quarter</th>
+    <th style="background-color: #dedcdc;">sample</th>
+    <th style="background-color: #dedcdc;">spend</th>
+    <th style="background-color: #dedcdc;">visits</th>
+    <th style="background-color: #dedcdc;">year</th>
+  </tr>
+  {% for doc in mood: %}
+    <tr>
+      <td style="background-color: #dedcdc;">{{ doc.area }}</td>
+      <td>{{ doc.dur_stay }}</td>
+      <td style="background-color: #dedcdc;">{{ doc.market }}</td>
+      <td>{{ doc.nights }}</td>
+      <td style="background-color: #dedcdc;">{{ doc.mode }}</td>
+      <td>{{ doc.purpose }}</td>
+      <td style="background-color: #dedcdc;">{{ doc.quarter }}</td>
+      <td>{{ doc.sample }}</td>
+      <td style="background-color: #dedcdc;">{{ doc.spend }}</td>
+      <td>{{ doc.visits }}</td>
+      <td style="background-color: #dedcdc;">{{ doc.year }}</td>
+    </tr>
+  {% endfor %}
+</table>
+{% endblock %}

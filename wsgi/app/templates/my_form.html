@@ -2,9 +2,10 @@
 {% block title %}<img src="{{ url_for('static', filename = 'img/'+mood+'_face.jpeg')}}", width=80, height=60, quality=95 />
 {% endblock %}
 {% block content %}
+<p><b>The following page shows 3 pictures based on emotional content entered.</b></p>
 <form action="" method="POST">
  	{{ form.csrf_token }}
- 	{{ form.message.label }} 
+ 	{{ form.message.label }}
  	{{ form.message(size=200) }}
     <input type=submit value="Send">
 </form>
